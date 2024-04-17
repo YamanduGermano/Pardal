@@ -43,21 +43,21 @@ section {
     margin-right: 15px;
 }
 
+/*
 section img > .botaoDireito{
     display: block;
     flex-direction: row;
+    justify-content: space-between;
     margin-left: 100%;
 
-
-}
-
-/*
-.botaoDireito{
-    flex-direction: column;
-    justify-content: flex-end;
-    margin-left: 15px;
 }
 */
+
+.botaoDireito{
+    justify-content: space-between;
+    margin-left: 100%;
+}
+
 
 /* Titulo da section */ 
 section h2 {
