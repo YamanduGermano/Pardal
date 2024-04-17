@@ -4,13 +4,13 @@
     align-items: center;
     text-align: center;
     justify-content: space-between;
-    padding: 1em 1.5em ;
+    padding: 1rem 1.5rem ;
 
 }
 
 .titulo{
     font-weight: 600;
-    font-size: 1.2em;
+    font-size: 1.2rem;
 }
 
 .corpo{
@@ -19,7 +19,7 @@
     height: 75vh;
     align-items: center;
     justify-content: center;
-    gap:2em;
+    gap:2rem;
 }
 
 #editar{
@@ -31,25 +31,25 @@
 .forms_perfil{
     display: flex;
     flex-direction: column;
-    gap: 0.2em;
+    gap: 0.2rem;
 }
 
 .container_inputs{
     display: flex;
-    gap: 0.5em;
+    gap: 0.5rem;
 }
 
 #botoes{
-    padding-top: 1em;
+    padding-top: 1rem;
     display: flex;
-    gap: 1em;
+    gap: 1rem;
 }
 
 .botao_perfil{
     text-decoration: none;
     text-align: center;
-    padding: 0.7em;
-    border-radius: 2em;
+    padding: 0.7rem;
+    border-radius: 2rem;
     color: var(--preto);
     text-transform: uppercase;
     width: 6rem;
@@ -66,7 +66,7 @@
 
 .input_minhaconta{
     width: 100%;
-    padding-left: 1em;
+    padding-left: 1rem;
     box-sizing: border-box;
     border-bottom: 2px solid #D9D9D9;
 }

@@ -72,24 +72,12 @@ li{
     align-items: flex-start;
 }
 
-.itemM {
-    height: 100%;
-    width: 40%;
-    background-color: green;
-}
-
-.itemG {
-    height: 100%;
-    width: 100%;
-    background-color: green;
-}
-
 
 .Not_Header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1em 1.5em;
+    padding: 1rem 1.5rem;
 }
 
 
