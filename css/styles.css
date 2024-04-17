@@ -1,7 +1,11 @@
-/* Corpo*/
+input {
+    border: none;
+}
 
 .body_r{
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 .body_c{
     flex-direction: column;
@@ -10,36 +14,82 @@ body{
     width: 100%;
     height: 100%;
     display:flex;
-    align-items: center;
-    justify-content: center;
+}
+.botao {
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.32);
+    display:block;
+    background-color: white;
 }
 
-/* Cabeçalho*/
-header{
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: pink;
+.item-drawer p {
+    margin-top: .5rem;
 }
-
-/* CABEÇALHO*/
-.cabecalho{
+#input-rota-container {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding: 1rem;
 }
 
-
-/* Nome do APP
-.TITULO{
-
-}/*
-/*Imagem MENU */
-.menu{
-    width: 2rem;
-    height: auto;
+#input-rota {
+    background-color: white;
+    padding: 0.5em 1rem;
+    flex-grow: 1;
+    margin-right: 2rem;
+    border-radius: 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.32);
 }
+
+#input-rota > input {
+    flex-grow: 1;
+    margin-left: 1rem;
+}
+
+#configuracoes {
+    border-radius: 2rem;
+    overflow: clip;
+    padding:.5rem
+}
+
+#drawer{
+    background-color: white;
+    box-shadow: 0px -5px 8px rgba(0, 0, 0, 0.32);
+    border-radius: 2rem 2rem 0rem 0rem;
+    position: absolute;
+    width: 100vw;
+    bottom: 0px;
+}
+
+#drawer > ul{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+#drawer-button{
+    width: 40vw;
+    height: .3rem;
+    background-color: #3B5261;
+    border-radius: .3rem;
+    margin-block: 1rem;
+}
+
+#mapa{
+    position: fixed;
+    top:0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    overflow: scroll;
+    z-index: -1;
+}
+
+#mapa > img{
+    width: 200vw;
+    user-select: none;
+}
+
 
 html{
     width: 100%;
