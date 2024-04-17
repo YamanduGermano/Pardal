@@ -15,7 +15,6 @@ body{
     align-items: center;
     text-align: center;
     justify-content: space-between;
-    background-color: ghostwhite;
     padding: 1em 1.5em ;
 
 }
@@ -62,19 +61,19 @@ body{
     text-align: center;
     padding: 0.7em;
     border-radius: 2em;
-    color: black;
+    color: var(--preto);
     text-transform: uppercase;
     width: 6rem;
 }
 
 .cancelar{
-    border: 1px solid black;
+    border: 1px solid var(--preto);
 }
 
 .mudar{
     background-color: var(--azul);
-    color: white;
-}/
+    color: var(--branco);
+}
 
 .input_minhaconta{
     width: 100%;
