@@ -10,6 +10,7 @@ input {
 .coluna {
     display: flex;
     flex-direction: column;
+    justify-content: center
 }
 
 .space-evenly {
@@ -140,6 +141,7 @@ body{
     text-align: center;
     margin: 0;
     padding: 0;
+    justify-self: center;
 
 }
 
@@ -187,4 +189,10 @@ body{
 
 a{
     padding: 1%;
+}
+
+.completo{
+    height: 100vh;
+    flex: ;
+
 }
