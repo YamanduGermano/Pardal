@@ -9,6 +9,11 @@
 :root{
     
     --fonte-titulo: 'Open Sans', 'sans-serif';
+    --azul: #3862E0;
+    --amarelo: #E0D438;
+    --azul_claro: #36BBE0;
+    --vermelho: #DE2A2A;
+    --verde_escuro:#3B5261;
 }
 
 body{

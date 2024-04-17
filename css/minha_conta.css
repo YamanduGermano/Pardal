@@ -72,9 +72,9 @@ body{
 }
 
 .mudar{
-    background-color: green;
+    background-color: var(--azul);
     color: white;
-}
+}/
 
 .input_minhaconta{
     width: 100%;
