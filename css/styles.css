@@ -1,6 +1,17 @@
 /* Corpo*/
+
+.body_r{
+    flex-direction: row;
+}
+.body_c{
+    flex-direction: column;
+}
 body{
-    padding-top: 4rem;
+    width: 100%;
+    height: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Cabeçalho*/
@@ -36,13 +47,7 @@ html{
     background-color: rgb(159, 159, 190);
 
 }
-body{
-    width: 100%;
-    height: 100%;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-}
+
 /* Titulo */
 .titulo1{
     font-family: Open sans-serif;
