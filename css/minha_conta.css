@@ -1,3 +1,4 @@
+
 .cabecalho{
     display: flex;
     align-items: center;
@@ -67,6 +68,5 @@
     width: 100%;
     padding-left: 1em;
     box-sizing: border-box;
-    border: none;
     border-bottom: 2px solid #D9D9D9;
 }
