@@ -1,4 +1,5 @@
 @import url(./modorua.css);
+@import url(./minha_conta.css);
 input {
     border: none;
 }
@@ -112,16 +113,9 @@ input {
 html{
     width: 100%;
     height: 100%;
-    background-color: rgb(159, 159, 190);
 
 }
-body{
-    width: 100%;
-    height: 100%;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-}
+
 /* Titulo */
 .titulo1{
     font-family: Open sans-serif;

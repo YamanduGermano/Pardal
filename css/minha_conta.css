@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root{
+    
+    --fonte-titulo: 'Open Sans', 'sans-serif';
+}
+
+body{
+    font-size: 1em;
+    font-weight: 400;
+    font-family: var(--fonte-titulo);
+}
+
+.cabecalho{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    background-color: ghostwhite;
+    padding: 1em 1.5em ;
+
+}
+
+.titulo{
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+.corpo{
+    display: flex;
+    flex-direction: column;
+    height: 75vh;
+    align-items: center;
+    justify-content: center;
+    gap:2em;
+}
+
+#editar{
+    /* position: fixed; */
+    position: absolute;
+    top:18em;
+    left: 16.5em;
+}
+
+.forms_perfil{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+}
+
+.container_inputs{
+    display: flex;
+    gap: 0.5em;
+}
+
+#botoes{
+    padding-top: 1em;
+    display: flex;
+    gap: 1em;
+}
+
+.botao_perfil{
+    text-decoration: none;
+    text-align: center;
+    padding: 0.7em;
+    border-radius: 2em;
+    color: black;
+    text-transform: uppercase;
+}
+
+.cancelar{
+    border: 1px solid black;
+}
+
+.mudar{
+    background-color: green;
+    color: white;
+}
+
+input{
+    width: 100%;
+    padding-left: 1em;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #D9D9D9;
+}

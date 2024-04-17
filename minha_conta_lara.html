@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha conta</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <a href="#">
+            <img src="/assets/retorno.png" alt="botão de retorno">
+        </a>
+        <h1 class="titulo" >Minha conta</h1>
+        <a href="#">
+            <img src="/assets/configurações.png" alt="botão de configurações">
+        </a>
+    </header>
+    <main class="corpo">
+        <img src="/assets/img_perfil.png" alt="">
+        <a id="editar" href="#">
+            <img src="/assets/editar.png" alt="Botão de editar perfil">
+        </a>
+        <form class="forms_perfil">
+            <div class="container_inputs">
+                <label for="name">Nome</label>
+                <input type="text" name="name" id="name" placeholder="Lorem ipsum">
+            </div>
+            <div class="container_inputs">
+                <label for="pwd">Senha:</label>
+                <input type="password" id="pwd" name="pwd"
+                placeholder="******">
+            </div>
+            <div class="container_inputs">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"
+                placeholder="pardal@email.com">
+            </div>
+            
+            <div id="botoes">
+                <a class="botao_perfil cancelar" href="#">Cancelar</a>
+                <a class="botao_perfil mudar" href="#">Mudar</a>
+            </div>
+            
+        </form>
+    </main>
+    
+    
+</body>
+</html>
