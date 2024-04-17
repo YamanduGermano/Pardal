@@ -151,15 +151,15 @@ body{
     align-self: flex-start;
     margin: 1% 0%;
 }
-.Modo-Rua-Ativo{
-    text-align: center;
-    margin: 0;
-    padding: 0;
 
-}
 
-.Titulo-modoruaativo{
+.titulo_rua{
     margin-top: 10px;
+    flex-direction: row;
+    justify-content: center;
+    font-family: Open sans;
+    font-size: 16px;
+    color: black;
 }
 
 .Not_Col{
@@ -215,6 +215,18 @@ li{
     margin-bottom: 6px;
     background-color: ghostwhite
 }
+
+.Modo-Rua {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+    position: fixed;
+    top:25%;
+    right:25%;
+}
+
 
 a{
     padding: 1%;
