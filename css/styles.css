@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Corpo*/
 body{
     padding-top: 4rem;
@@ -12,6 +13,105 @@ header{
 }
 
 /* CABEÇALHO*/
+=======
+input {
+    border: none;
+}
+
+.linha {
+    display: flex;
+    flex-direction: row;
+}
+
+.coluna {
+    display: flex;
+    flex-direction: column;
+}
+
+.space-evenly {
+    justify-content: space-evenly;
+}
+
+.centro {
+    display: flex;
+    align-items: center;
+}
+.botao {
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.32);
+    display:block;
+    background-color: white;
+}
+
+.item-drawer p {
+    margin-top: .5rem;
+}
+#input-rota-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+#input-rota {
+    background-color: white;
+    padding: 0.5em 1rem;
+    flex-grow: 1;
+    margin-right: 2rem;
+    border-radius: 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.32);
+}
+
+#input-rota > input {
+    flex-grow: 1;
+    margin-left: 1rem;
+}
+
+#configuracoes {
+    border-radius: 2rem;
+    overflow: clip;
+    padding:.5rem
+}
+
+#drawer{
+    background-color: white;
+    box-shadow: 0px -5px 8px rgba(0, 0, 0, 0.32);
+    border-radius: 2rem 2rem 0rem 0rem;
+    position: absolute;
+    width: 100vw;
+    bottom: 0px;
+}
+
+#drawer > ul{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+#drawer-button{
+    width: 40vw;
+    height: .3rem;
+    background-color: #3B5261;
+    border-radius: .3rem;
+    margin-block: 1rem;
+}
+
+#mapa{
+    position: fixed;
+    top:0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    overflow: scroll;
+    z-index: -1;
+}
+
+#mapa > img{
+    width: 200vw;
+    user-select: none;
+}
+/* Cabeçalho */
+>>>>>>> 41636f73b2060b927c77c4540921f76fb2c7e57a
 .cabecalho{
     display: flex;
     flex-direction: row;
@@ -19,12 +119,38 @@ header{
     align-items: center;
 }
 
+<<<<<<< HEAD
 /* Nome do APP*/
 .TITULO{
+=======
+/*Imagem MENU */
+.menu{
+    width: 2rem;
+    height: auto;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(159, 159, 190);
+
+}
+body{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Titulo */
+.titulo1{
+    font-family: Open sans-serif;
+>>>>>>> 41636f73b2060b927c77c4540921f76fb2c7e57a
     font-size: 24px;
     font-weight: bold;
     color: black;
     margin-right: 700px;
+<<<<<<< HEAD
 }
 
 /*Imagem MENU*/
@@ -104,3 +230,65 @@ footer{
     text-decoration: none;
     color: black;
 }
+=======
+
+}
+.titulo2{
+    font-family: Open sans;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+}
+.Modo-Rua-Ativo{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+
+}
+
+.Titulo-modoruaativo{
+    margin-top: 10px;
+}
+
+.Not_Col{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: aqua;
+}
+
+.Not_Lin{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #DC14B0;
+}
+
+.itemG {
+    height: 100%;
+    width: 40%;
+    background-color: green;
+}
+
+.lis {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #DC14B0;
+    margin-inline: 5%;
+}
+
+.Not_Header {
+    display: flex;
+    width: 100%;
+    position: relative;
+    flex-direction:row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+a{
+    padding: 1%;
+}
+>>>>>>> 41636f73b2060b927c77c4540921f76fb2c7e57a
