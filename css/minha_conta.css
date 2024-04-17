@@ -76,7 +76,7 @@ body{
     color: white;
 }
 
-input{
+.input_minhaconta{
     width: 100%;
     padding-left: 1em;
     box-sizing: border-box;
