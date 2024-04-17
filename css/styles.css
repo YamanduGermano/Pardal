@@ -1,3 +1,19 @@
+<<<<<<< HEAD
+/* Corpo*/
+body{
+    padding-top: 4rem;
+}
+
+/* Cabeçalho*/
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: pink;
+}
+
+/* CABEÇALHO*/
+=======
 input {
     border: none;
 }
@@ -95,6 +111,7 @@ input {
     user-select: none;
 }
 /* Cabeçalho */
+>>>>>>> 41636f73b2060b927c77c4540921f76fb2c7e57a
 .cabecalho{
     display: flex;
     flex-direction: row;
@@ -102,6 +119,10 @@ input {
     align-items: center;
 }
 
+<<<<<<< HEAD
+/* Nome do APP*/
+.TITULO{
+=======
 /*Imagem MENU */
 .menu{
     width: 2rem;
@@ -124,10 +145,92 @@ body{
 /* Titulo */
 .titulo1{
     font-family: Open sans-serif;
+>>>>>>> 41636f73b2060b927c77c4540921f76fb2c7e57a
     font-size: 24px;
     font-weight: bold;
     color: black;
     margin-right: 700px;
+<<<<<<< HEAD
+}
+
+/*Imagem MENU*/
+.MENU{
+    width: 2rem;
+    height: auto;
+}
+
+/* Sections*/
+.caixa{
+    border: 1px solid black;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.estrutura{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+/* Dentro das section*/
+.detalhes-meses{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.informacao{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 1.5rem;
+}
+
+.informacao li{
+    font-size: 16px;
+    margin-bottom: 0.4rem;
+}
+
+.nome-mes1{
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 650px;
+
+}
+
+.nome-mes2{
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 650px;
+}
+
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color:pink;
+}
+
+.menu-rodape{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.menu-rodape li{
+    font-size: 16px;
+    margin: 1rem 1.5rem;
+    color: white;
+}
+
+/* BOTAO VOLTAR E PLUS*/
+.menu-rodape li a{
+    text-decoration: none;
+    color: black;
+}
+=======
 
 }
 .titulo2{
@@ -219,3 +322,4 @@ li{
 a{
     padding: 1%;
 }
+>>>>>>> 41636f73b2060b927c77c4540921f76fb2c7e57a
