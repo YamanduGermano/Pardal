@@ -1,3 +1,17 @@
+/* Corpo*/
+body{
+    padding-top: 4rem;
+}
+
+/* Cabeçalho*/
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: pink;
+}
+
+/* CABEÇALHO*/
 input {
     border: none;
 }
@@ -129,8 +143,87 @@ body{
     font-weight: bold;
     color: black;
     margin-right: 700px;
+}
+
+/*Imagem MENU*/
+.MENU{
+    width: 2rem;
+    height: auto;
+}
+
+/* Sections*/
+.caixa{
+    border: 1px solid black;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.estrutura{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+/* Dentro das section*/
+.detalhes-meses{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.informacao{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 1.5rem;
+}
+
+.informacao li{
+    font-size: 16px;
+    margin-bottom: 0.4rem;
+}
+
+.nome-mes1{
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 650px;
 
 }
+
+.nome-mes2{
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 650px;
+}
+
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color:pink;
+}
+
+.menu-rodape{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.menu-rodape li{
+    font-size: 16px;
+    margin: 1rem 1.5rem;
+    color: white;
+}
+
+/* BOTAO VOLTAR E PLUS*/
+.menu-rodape li a{
+    text-decoration: none;
+    color: black;
+}
+
+
 .titulo2{
     font-family: Open sans;
     font-size: 24px;
@@ -141,9 +234,9 @@ body{
     text-align: center;
     margin: 0;
     padding: 0;
-    justify-self: center;
 
 }
+
 
 .Titulo-modoruaativo{
     margin-top: 10px;
@@ -191,8 +284,4 @@ a{
     padding: 1%;
 }
 
-.completo{
-    height: 100vh;
-    flex: ;
 
-}
