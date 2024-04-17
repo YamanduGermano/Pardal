@@ -1,9 +1,9 @@
 .titulo_rua{
-    margin-top: 10px;
+    margin-top: 0.625rem;
     flex-direction: row;
     justify-content: center;
     font-family: Open sans;
-    font-size: 16px;
+    font-size: 1rem;
     color: black;
 }
 .Modo-Rua {
