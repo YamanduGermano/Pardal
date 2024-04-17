@@ -136,6 +136,21 @@ body{
     font-weight: bold;
     color: black;
 }
+.titulo3{
+    font-family: Open sans;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    align-self: flex-start;
+    margin: 1% 0%;
+}
+.texto1{
+    font-family: Open sans;
+    font-size: 16px;
+    color: black;
+    align-self: flex-start;
+    margin: 1% 0%;
+}
 .Modo-Rua-Ativo{
     text-align: center;
     margin: 0;
@@ -151,7 +166,16 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-color: aqua;
+    align-items: center;
+    margin: 3% 10%;
+
+}
+
+li{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .Not_Lin{
@@ -161,9 +185,15 @@ body{
     background-color: #DC14B0;
 }
 
-.itemG {
+.itemM {
     height: 100%;
     width: 40%;
+    background-color: green;
+}
+
+.itemG {
+    height: 100%;
+    width: 100%;
     background-color: green;
 }
 
@@ -183,6 +213,7 @@ body{
     justify-content: space-evenly;
     align-items: center;
     margin-bottom: 6px;
+    background-color: ghostwhite
 }
 
 a{
