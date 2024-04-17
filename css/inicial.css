@@ -1,0 +1,94 @@
+.item-drawer p {
+    margin-top: .5rem;
+}
+
+.item-drawer img{
+    width: 5rem;
+    user-select: none;
+}
+
+#input-rota-container {
+    padding: 1rem;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+nav{
+    width: 100%;
+}
+
+#input-rota {
+    background-color: white;
+    padding: 0.5em 1rem;
+    flex-grow: 1;
+    margin-right: 2rem;
+    border-radius: 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.32);
+}
+
+#input-rota > input {
+    flex-grow: 1;
+    margin-left: 1rem;
+}
+
+#configuracoes {
+    border-radius: 2rem;
+    padding:.5rem;
+    aspect-ratio: 1;
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.32);
+    background-color: white;
+}
+
+#drawer{
+    box-sizing: content-box;
+    background-color: white;
+    box-shadow: 0px -5px 8px rgba(0, 0, 0, 0.32);
+    border-radius: 2rem 2rem 0rem 0rem;
+    position: fixed;
+    width: 100vw;
+    bottom:-7.5rem;
+    transition:.5s cubic-bezier(.64,.08,.32,.99);
+    overflow: hidden;
+}
+
+#drawer.active{
+    bottom:0px;
+}
+
+#drawer > ul{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+#drawer-button {
+    width: 100%;
+    height: 1.5rem;
+    background-color: white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+#drawer-button > div{
+    width: 30vw;
+    height: .3rem;
+    background-color: #3B5261;
+    border-radius: .3rem;
+    box-sizing: border-box;
+}
+
+#mapa{
+    position: fixed;
+    top:0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    overflow: scroll;
+    z-index: -1;
+}
+
+#mapa > img{
+    width: 200vw;
+    user-select: none;
+}
