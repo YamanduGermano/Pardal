@@ -6,43 +6,70 @@
     <title>Pardall App</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/styles.css">
+    <script>
+        function drawer(fechar){
+            if (fechar==true){
+                document.getElementById('drawer').classList.remove('active');
+            }
+            else {
+                document.getElementById('drawer').classList.toggle('active');
+            }
+        }
+    </script>
 </head>
 <body>
     <main>
         <nav>
             <ul id="input-rota-container" class="linha centro">
                 <li id="input-rota" class="linha">
-                    <img src="https://fakeimg.pl/30x30" alt="" srcset="">
+                    <img src="./assets/lupa.svg" alt="Icone de Pesquisar rota">
                     <input type="text" placeholder="Pesquisar Rota">
                 </li>
                 <li>
-                    <a class="botao" id="configuracoes">
-                        <img src="https://fakeimg.pl/30x30" alt="Configurações"/>
+                    <a href="/config.html" class="abs-centro" id="configuracoes">
+                        <img src="./assets/catraca.svg" alt="Configurações">
                     </a>
                 </li>
             </ul>
         </nav>
+        <!-- <section class="lista-rotas">
+            <h4>Rotas recentes</h1>
+            <a class="item-rota centro">
+                <p>Insper - R. Quatá, 300 - Vila Olímpia</p>
+                <img src="./assets/seta-esquerda.svg" alt="Icone de avançar no icone escolhido">
+            </a>
+            <a class="item-rota centro">
+                <p>Insper - R. Quatá, 300 - Vila Olímpia</p>
+                <img src="./assets/seta-esquerda.svg" alt="Icone de avançar no icone escolhido">
+            </a>
+            <a class="item-rota centro">
+                <p>Insper - R. Quatá, 300 - Vila Olímpia</p>
+                <img src="./assets/seta-esquerda.svg" alt="Icone de avançar no icone escolhido">
+            </a>
+        </section> -->
     </main>
     <footer id="drawer" class="coluna centro">
         <!-- Drawer -->
-        <div id="drawer-button"></div>
+        <div id="drawer-button" onclick="drawer();">
+            <div></div>
+        </div>
        <ul class="linha space-evenly">
             <li class="coluna centro item-drawer">
-                <img src="https://fakeimg.pl/60x60" alt="">
+                <img src="./assets/noticias.svg" alt="Icone para abrir a aba de notícias">
                 <p>Notícias</p>
             </li>
             <li class="coluna centro item-drawer">
-                <img src="https://fakeimg.pl/60x60" alt="">
+                <img src="./assets/modo-Rua.svg" alt="Icone para ativar ou desativar o modo-rua">
                 <p>Modo Rua</p>
             </li>
             <li class="coluna centro item-drawer">
-                <img src="https://fakeimg.pl/60x60" alt="">
+                <img src="./assets/reportar.svg" alt="Icone para reportar ocorrências">
                 <p>Reportar</p>
             </li>
        </ul> 
     </footer>
-    <div id="mapa">
-        <img src="./img/map.png" alt="Mapa">
+    <div id="mapa" onclick="drawer(true);">
+        <img src="./assets/map.png" alt="Mapa">
     </div>
 </body>
 </html>

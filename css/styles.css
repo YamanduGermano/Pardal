@@ -1,7 +1,13 @@
 @import url(./modorua.css);
-@import url(./minha_conta.css);
+@import url(./inicial.css);
+@import url(./pesquisar-rotas.css);
 input {
     border: none;
+}
+
+h4 {
+    font-size: 1rem;
+    font-weight: bold;
 }
 
 .linha {
@@ -18,84 +24,28 @@ input {
     justify-content: space-evenly;
 }
 
+.space-between {
+    justify-content: space-between;
+}
+
 .centro {
     display: flex;
     align-items: center;
 }
+
+.abs-centro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .botao {
     box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.32);
     display:block;
     background-color: white;
 }
 
-.item-drawer p {
-    margin-top: .5rem;
-}
-#input-rota-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-}
 
-#input-rota {
-    background-color: white;
-    padding: 0.5em 1rem;
-    flex-grow: 1;
-    margin-right: 2rem;
-    border-radius: 1.5rem;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.32);
-}
-
-#input-rota > input {
-    flex-grow: 1;
-    margin-left: 1rem;
-}
-
-#configuracoes {
-    border-radius: 2rem;
-    overflow: clip;
-    padding:.5rem
-}
-
-#drawer{
-    background-color: white;
-    box-shadow: 0px -5px 8px rgba(0, 0, 0, 0.32);
-    border-radius: 2rem 2rem 0rem 0rem;
-    position: absolute;
-    width: 100vw;
-    bottom: 0px;
-}
-
-#drawer > ul{
-    width: 100%;
-    margin-bottom: 1rem;
-}
-
-#drawer-button{
-    width: 40vw;
-    height: .3rem;
-    background-color: #3B5261;
-    border-radius: .3rem;
-    margin-block: 1rem;
-}
-
-#mapa{
-    position: fixed;
-    top:0px;
-    left: 0px;
-    width: 100vw;
-    height: 100vh;
-    overflow: scroll;
-    z-index: -1;
-}
-
-#mapa > img{
-    width: 200vw;
-    user-select: none;
-}
 /* Cabeçalho */
 .cabecalho{
     display: flex;
@@ -113,12 +63,18 @@ input {
 html{
     width: 100%;
     height: 100%;
+    background-color: rgb(159, 159, 190);
 
 }
-
+body{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
 /* Titulo */
 .titulo1{
-    font-family: Open sans-serif;
     font-size: 24px;
     font-weight: bold;
     color: black;
@@ -126,13 +82,11 @@ html{
 
 }
 .titulo2{
-    font-family: Open sans;
     font-size: 24px;
     font-weight: bold;
     color: black;
 }
 .titulo3{
-    font-family: Open sans;
     font-size: 20px;
     font-weight: bold;
     color: black;
@@ -140,7 +94,6 @@ html{
     margin: 1% 0%;
 }
 .texto1{
-    font-family: Open sans;
     font-size: 16px;
     color: black;
     align-self: flex-start;
