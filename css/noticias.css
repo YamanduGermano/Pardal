@@ -1,12 +1,3 @@
-
-/* Cabeçalho */
-.cabecalho{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
 /*Imagem MENU */
 .menu{
     width: 2rem;
