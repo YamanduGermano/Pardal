@@ -9,18 +9,22 @@
     <link rel="stylesheet" href="css/reset.css">
 
     <link rel="stylesheet" href="css/styles.css">
+    <script>
+        function inicio(){
+            setTimeout(()=>{window.location.replace("/index.html")}, 1000)
+        }
+    </script>
 </head>
 
-<body>
-    <ul class="Modo-Rua">
+<body onload="inicio()">
+    <ul class="Modo-Rua coluna">
         <li>
-            <ul class="coluna">
-                <li><img src="assets/modo-Rua-Inativo.png" alt="Modo Rua Inativo"></li>
-                <li class="titulo_rua">
-                    <h1> Modo Rua Inativo </h1>
-                </li>
-            </ul>
+            <img src="assets/modo-Rua-Inativo.svg" alt="Modo Rua Inativo">
         </li>
+        <li class="titulo_rua">
+            <h3> Modo Rua Inativo </h3>
+        </li>
+
     </ul>
 </body>
 

@@ -7,6 +7,22 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/styles.css">
     <script>
+        function actModoRua() {
+            let params = new URLSearchParams(window.location.search)
+            let modoRua = false
+            
+            if (params.has('modoRua') && params.get('modoRua')=='true'){
+                modoRua = true
+            }
+
+            if (modoRua){
+                window.location.replace("/modorua.html?modoRua=true")
+            }
+            else {
+                window.location.replace("/modorua.html?modoRua=false")
+            }
+        }
+
         function drawer(fechar){
             if (fechar==true){
                 document.getElementById('drawer').classList.remove('active');
@@ -32,21 +48,6 @@
                 </li>
             </ul>
         </nav>
-        <!-- <section class="lista-rotas">
-            <h4>Rotas recentes</h1>
-            <a class="item-rota centro">
-                <p>Insper - R. Quatá, 300 - Vila Olímpia</p>
-                <img src="./assets/seta-esquerda.svg" alt="Icone de avançar no icone escolhido">
-            </a>
-            <a class="item-rota centro">
-                <p>Insper - R. Quatá, 300 - Vila Olímpia</p>
-                <img src="./assets/seta-esquerda.svg" alt="Icone de avançar no icone escolhido">
-            </a>
-            <a class="item-rota centro">
-                <p>Insper - R. Quatá, 300 - Vila Olímpia</p>
-                <img src="./assets/seta-esquerda.svg" alt="Icone de avançar no icone escolhido">
-            </a>
-        </section> -->
     </main>
     <footer id="drawer" class="coluna centro">
         <!-- Drawer -->
@@ -55,16 +56,20 @@
         </div>
        <ul class="linha space-evenly">
             <li class="coluna centro item-drawer">
-                <img src="./assets/noticias.svg" alt="Icone para abrir a aba de notícias">
-                <p>Notícias</p>
+                <a href="./noticias.html">
+                    <img src="./assets/noticias.svg" alt="Icone para abrir a aba de notícias">
+                    <p>Notícias</p>
+                </a>
             </li>
-            <li class="coluna centro item-drawer">
+            <li onclick="actModoRua();" class="coluna centro item-drawer">
                 <img src="./assets/modo-Rua.svg" alt="Icone para ativar ou desativar o modo-rua">
                 <p>Modo Rua</p>
             </li>
-            <li class="coluna centro item-drawer">
-                <img src="./assets/reportar.svg" alt="Icone para reportar ocorrências">
-                <p>Reportar</p>
+            <li>
+                <a class="coluna centro item-drawer" href="./reportar.html">
+                    <img src="./assets/reportar.svg" alt="Icone para reportar ocorrências">
+                    <p>Reportar</p>
+                </a>
             </li>
        </ul> 
     </footer>

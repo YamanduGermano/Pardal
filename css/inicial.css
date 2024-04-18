@@ -1,5 +1,8 @@
 .item-drawer p {
     margin-top: .5rem;
+    color: black;
+    font-family: 'Open Sans';
+    text-align: center;
 }
 
 .item-drawer img{

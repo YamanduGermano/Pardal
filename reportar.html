@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pardall App</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <footer id="drawer" class="coluna centro">
+        <!-- Drawer -->
+        <a href="index.html" id="drawer-button">
+            <div></div>
+        </a>
+       <ul class="linha space-evenly">
+            <li class="coluna centro item-drawer">
+                <a href="./noticias.html">
+                    <img src="./assets/noticias.svg" alt="Icone para abrir a aba de notícias">
+                    <p>Notícias</p>
+                </a>
+            </li>
+            <li onclick="actModoRua();" class="coluna centro item-drawer">
+                <img src="./assets/modo-Rua.svg" alt="Icone para ativar ou desativar o modo-rua">
+                <p>Modo Rua</p>
+            </li>
+            <li class="coluna centro item-drawer">
+                <a href="./reportar.html">
+                    <img src="./assets/reportar.svg" alt="Icone para reportar ocorrências">
+                    <p>Reportar</p>
+                </a>
+            </li>
+       </ul> 
+    </footer>
+    <div id="mapa" onclick="drawer(true);">
+        <img src="./assets/map.png" alt="Mapa">
+    </div>
+</body>
+</html>
