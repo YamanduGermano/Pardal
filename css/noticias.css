@@ -1,40 +1,16 @@
-
-/* Cabeçalho */
-.cabecalho{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
 /*Imagem MENU */
 .menu{
     width: 2rem;
     height: auto;
 }
 
-html{
-    width: 100%;
-    height: 100%;
-}
-
-/* Titulo */
-.titulo1{
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: black;
-    margin-right: 700px;
-
-}
 .titulo2{
     font-size: 1.5rem;
     font-weight: bold;
-    color: black;
 }
 .titulo3{
     font-size: 1.25rem;
     font-weight: bold;
-    color: black;
     align-self: flex-start;
     margin: 4% 0%;
 }
@@ -42,20 +18,16 @@ html{
 .titulo4{
     font-size: 1.25rem;
     font-weight: bold;
-    color: black;
     align-self: flex-start;
     margin: 4% 0%;
 }
 
 .texto1{
     font-size: 0.95rem;
-    color: black;
+
     align-self: flex-start;
     margin: 3% 0.5%;
 }
-
-
-
 
 .Not_Col{
     display: flex;
@@ -63,7 +35,6 @@ html{
     justify-content: flex-start;
     align-items: center;
     margin: 3% 4%;
-
 }
 
 li{
@@ -83,28 +54,20 @@ li{
 .itemM {
     height: 100%;
     width: 40%;
-    background-color: green;
 }
 
 .itemG {
     height: 100%;
     width: 100%;
-    background-color: green;
 }
 
 
 .Not_Header {
     display: flex;
-    width: 100%;
-    position: relative;
-    flex-direction:row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    margin-bottom: 6px;
-    background-color: ghostwhite
+    padding: 1rem 1.5rem;
 }
-
-
 
 
 a{

@@ -1,18 +1,12 @@
 .titulo_rua{
-    margin-top: 0.625rem;
+    margin-top: 1rem;
     flex-direction: row;
     justify-content: center;
-    font-family: Open sans;
-    font-size: 1rem;
-    color: black;
 }
 .Modo-Rua {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
-    height: 50%;
-    position: fixed;
-    top:25%;
-    right:25%;
+    width: 100vw;
+    height: 100vh;
 }

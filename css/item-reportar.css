@@ -1,16 +1,18 @@
-.lista-rotas{
+.lista-reportar{
     margin:1rem;
 }
 
-.item-rota{
+.item-reportar{
     display: flex;
     flex-direction: row;
     margin-top: 1rem;
 }
 
-.item-rota > p {
+.item-reportar > p {
+    display: block;
     color:black;
-    text-decoration: none;
+    flex-grow: 1;
+    display: block;
     width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
