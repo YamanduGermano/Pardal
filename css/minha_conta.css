@@ -28,6 +28,13 @@
     left: 16rem;
 }
 
+#botao_edicao{
+    background-color: var(--azul);
+    /* width: 22px; */
+    padding: 1em;
+    border-radius: 100%;
+}
+
 .forms_perfil{
     display: flex;
     flex-direction: column;
