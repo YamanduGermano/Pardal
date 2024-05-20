@@ -1,4 +1,4 @@
-/*Modo Rua*/
+/*Página Modo Rua*/
 body {
     font-family: Open, sans-serif;
     margin: 0;
@@ -12,7 +12,7 @@ header {
     color: black;
     font-weight: bold;
     font-size: 24px;
-    padding: 10px 20px;
+    padding: 1rem 1.5rem;
     display: flex;
     flex-direction: row;
     align-items: center;
