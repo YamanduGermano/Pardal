@@ -6,32 +6,7 @@
     <title>Pardall App</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/styles.css">
-    <script>
-        function actModoRua() {
-            let params = new URLSearchParams(window.location.search)
-            let modoRua = false
-            
-            if (params.has('modoRua') && params.get('modoRua')=='true'){
-                modoRua = true
-            }
-
-            if (modoRua){
-                window.location.replace("/modorua.html?modoRua=true")
-            }
-            else {
-                window.location.replace("/modorua.html?modoRua=false")
-            }
-        }
-
-        function drawer(fechar){
-            if (fechar==true){
-                document.getElementById('drawer').classList.remove('active');
-            }
-            else {
-                document.getElementById('drawer').classList.toggle('active');
-            }
-        }
-    </script>
+    <script src="./js/index.js"></script>
 </head>
 <body>
     <main>
@@ -61,7 +36,7 @@
                     <p>Notícias</p>
                 </a>
             </li>
-            <li onclick="actModoRua();" class="coluna centro item-drawer">
+            <li class="coluna centro item-drawer" id="modoRua">
                 <img src="./assets/modo-Rua.svg" alt="Icone para ativar ou desativar o modo-rua">
                 <p>Modo Rua</p>
             </li>

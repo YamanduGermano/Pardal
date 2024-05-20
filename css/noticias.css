@@ -62,7 +62,7 @@ li{
 }
 
 
-.Not_Header {
+.Header {
     display: flex;
     justify-content: space-between;
     align-items: center;

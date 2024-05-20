@@ -1,3 +1,7 @@
+.item-drawer {
+    padding: 0px;
+}
+
 .item-drawer p {
     margin-top: .5rem;
     color: black;
@@ -8,6 +12,8 @@
 .item-drawer img{
     width: 5rem;
     user-select: none;
+    box-sizing: content-box;
+    border-radius: calc(2.5rem);
 }
 
 #input-rota-container {
