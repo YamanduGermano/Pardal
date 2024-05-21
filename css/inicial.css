@@ -122,6 +122,7 @@ nav{
 }
 
 #overlay.active {
-    display: block;
+    display: flex;
     opacity: 1;
 }
+

@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     modoRua = this.querySelector("#modoRua")
     iconeMR = this.querySelector('#modo')
     overlay = this.querySelector('#overlay')
+    textoMR = this.querySelector('#texto_MR')
 
     mRStatus = localStorage.getItem('modoRuaStatus')
     if(mRStatus==null){
@@ -17,19 +18,34 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Mudar variável de controle do Modo Rua
         mRStatus = !mRStatus
-        console.log(mRStatus)
+        
         localStorage.setItem('modoRuaStatus',mRStatus)
         // Mudar imagem do icone do Modo Rua
-        overlay.classList.toggle('active')
+        
         if (mRStatus){
-            modoRua.querySelector('img').src = '../assets/Modo RuaAtivo.svg'
-            iconeMR.src = '../assets/iconeInativo.svg'
+            modoRua.querySelector('img').src = '../assets/Modo RuaAtivo.svg';
+            iconeMR.src = '../assets/iconeInativo.svg';
+            textoMR.innerHTML = "Modo rua Inativado"
+            overlay.classList.add('active');
+            setTimeout(() => {
+                overlay.classList.remove('active');
+            }, 1000);
+            
+    
         } else {
             modoRua.querySelector('img').src = '../assets/Modo Rua.svg'
             iconeMR.src = '../assets/iconeAtivo.svg'
+            textoMR.innerHTML = "Modo rua ativado"
+            overlay.classList.add('active');
+            setTimeout(() => {
+                overlay.classList.remove('active');
+            }, 1000);
+            
+            
+
         }
         e.stopPropagation()
-        setTimeout(overlay.classList.toggle('active'),1000)
+        
         console.log('a')
     })
 
@@ -44,4 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
     } else{
         iconeMR.src = '../assets/iconeInativo.svg'
     }
+
+    
+    
 })
