@@ -101,3 +101,27 @@ nav{
     width: 200vw;
     user-select: none;
 }
+
+.titulo_rua{
+    margin-top: 1rem;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#overlay {
+    display: none;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    opacity: 0;
+    z-index: 10;
+    transition:.5s cubic-bezier(.64,.08,.32,.99);
+}
+
+#overlay.active {
+    display: block;
+    opacity: 1;
+}

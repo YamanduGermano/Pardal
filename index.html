@@ -10,6 +10,15 @@
 </head>
 <body>
     <main>
+        <ul id="overlay" class="coluna">
+            <li>
+                <img id='modo' src="./assets/modo-Rua-Inativo.svg" alt="Modo Rua Ativo">
+            </li>
+            <li class="titulo_rua">
+                <h3 id="texto">Modo Rua Inativo</h3>
+            </li>
+    
+        </ul>
         <nav>
             <ul id="input-rota-container" class="linha centro">
                 <li id="input-rota" class="linha">
@@ -26,7 +35,7 @@
     </main>
     <footer id="drawer" class="coluna centro">
         <!-- Drawer -->
-        <div id="drawer-button" onclick="drawer();">
+        <div id="drawer-button">
             <div></div>
         </div>
        <ul class="linha space-evenly">
@@ -48,7 +57,7 @@
             </li>
        </ul> 
     </footer>
-    <div id="mapa" onclick="drawer(true);">
+    <div id="mapa">
         <img src="./assets/map.png" alt="Mapa">
     </div>
 </body>
