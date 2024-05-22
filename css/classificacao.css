@@ -1,0 +1,45 @@
+.input-class-container {
+    padding: 1rem;
+    width: 100vw;
+     box-sizing: border-box; 
+}
+
+#input-classificacao {
+    padding: 1rem;
+    margin-top: 25rem;
+    width: 100vw;
+    box-sizing: border-box; 
+    display: flex;
+    gap: 1em;
+}
+
+#input-class{
+    background-color: white;
+    padding: 0.5em 1rem;
+    flex-grow: 1;
+    margin-right: 2rem;
+    border-radius: 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.32);
+}
+
+#botao_classificacao{
+    background-color: var(--vermelho);
+    padding: 1em 1rem;
+    flex-grow: 1;
+    margin-right: 2rem;
+    border-radius: 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.32);
+    
+}
+    
+
+#botao_classificacao > p {
+    color: var(--branco);
+    text-align: center;
+    text-transform: uppercase;
+   
+}   
