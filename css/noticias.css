@@ -5,8 +5,10 @@
 }
 
 .titulo2{
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-size: 1.2rem;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 1.5rem;
 }
 .titulo3{
     font-size: 1.25rem;

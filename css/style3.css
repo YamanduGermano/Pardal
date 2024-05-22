@@ -33,7 +33,7 @@ main {
 /* Parte da Section */ 
 section {
     background-color: #fff;
-    padding: 3%;
+    padding: 2%;
     display: flex;
     flex-direction: row;
     align-items: center;
