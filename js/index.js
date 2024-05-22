@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
     
         } else {
-            modoRua.querySelector('img').src = '../assets/Modo Rua.svg'
+            modoRua.querySelector('img').src = '../assets/modo-Rua-Inativo.svg'
             iconeMR.src = '../assets/iconeAtivo.svg'
             textoMR.innerHTML = "Modo rua ativado"
             overlay.classList.add('active');
