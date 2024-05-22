@@ -24,9 +24,10 @@
 
 .texto1{
     font-size: 0.95rem;
-
+    width: 100%;
     align-self: flex-start;
     margin: 3% 0.5%;
+    line-height: 1.2rem;
 }
 
 .Not_Col{
@@ -38,14 +39,14 @@
 }
 
 li{
-    display: flex;
+    display:flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
 }
 
 .Not_Lin{
-    display: flex;
+    display:flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
@@ -57,6 +58,11 @@ li{
 }
 
 .itemG {
+    height: 6.66rem;
+    width: 10rem;
+}
+
+.itemGG {
     height: 100%;
     width: 100%;
 }

@@ -9,6 +9,8 @@ document.addEventListener('DOMContentLoaded', function() {
         localStorage.setItem('modoRuaStatus',false)
     }
 
+
+
     if (mRStatus){
         modoRua.querySelector('img').src = '../assets/Modo RuaAtivo.svg'
 
@@ -61,6 +63,8 @@ document.addEventListener('DOMContentLoaded', function() {
         iconeMR.src = '../assets/iconeInativo.svg'
     }
 
-    
+
+
+
     
 })

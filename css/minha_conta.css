@@ -24,7 +24,7 @@
 
 #editar{
     position: absolute;
-    top:20rem;
+    top:18rem;
     left: 16rem;
 }
 
@@ -44,6 +44,7 @@
 .container_inputs{
     display: flex;
     gap: 0.5rem;
+    margin: 0.5rem;
 }
 
 #botoes{
@@ -76,4 +77,49 @@
     padding-left: 1rem;
     box-sizing: border-box;
     border-bottom: 2px solid #D9D9D9;
+}
+
+
+
+.screenshot-image {
+    width: 150px;
+    height: 90px;
+    border-radius: 4px;
+    border: 2px solid whitesmoke;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    background: white;
+}
+
+.display-cover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: 5% auto;
+    position: relative;
+}
+
+video {
+    margin-left: 1.6rem;
+    width: 10rem;
+    height: 10rem;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+canva{
+    width: 10rem;
+    height: 10rem;
+}
+
+.video-options {
+    position: center;
+    margin-top: 1.5rem ;
+}
+
+.invisivel{
+    display: none;
+    flex-direction: column;
 }
