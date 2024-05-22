@@ -6,6 +6,7 @@
     <title>Minha conta</title>
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/styles.css">
+    <script src="./js/minha_conta.js"></script>
 </head>
 <body>
     <header class="cabecalho">
@@ -14,28 +15,37 @@
         </a>
         <h1 class="titulo" >Minha conta</h1>
         <a href="#">
-            <img src="/assets/Editar.svg" alt="botão de configurações">
+            <img  src="/assets/Editar.svg" alt="botão de configurações">
         </a>
     </header>
     <main class="corpo">
-        <img src="/assets/img_perfil.png" alt="Imagem de perfil">
+        <section class="moldura">
+            
+        </section>
+        <img class="icone_perfil" src="/assets/img_perfil.png" alt="Imagem de perfil">
+        <display class="invisivel">
+            <video autoplay></video>
+            <li class="video-options"><select name="Sergio" id="" class="custom-select"><option value="">Select camera</option></select></li>'
+        </display>
+        
         <a id="editar" href="#">
-            <img src="/assets/Camera.svg" alt="Botão de editar perfil">
+            <img id="camera" src="/assets/Camera.svg" alt="Botão de editar perfil">
         </a>
         <form class="forms_perfil">
             <div class="container_inputs">
                 <label for="name">Nome</label>
-                <input class="input_minhaconta" type="text" name="name" id="name" placeholder="Lorem ipsum">
+                <input class="input_minhaconta" type="text" name="name" id="name" autocomplete="Lorem ipsum"
+                placeholder="Lorem Ipsum da Silva">
             </div>
             <div class="container_inputs">
                 <label for="pwd">Senha:</label>
                 <input class="input_minhaconta" type="password" id="pwd" name="pwd"
-                placeholder="******">
+                autocomplete="******" placeholder="******">
             </div>
             <div class="container_inputs">
                 <label for="email">Email:</label>
                 <input class="input_minhaconta" type="email" id="email" name="email"
-                placeholder="pardal@email.com">
+                autocomplete="pardal@email.com" placeholder="pardal@email.com">
             </div>
             
             <div id="botoes">
