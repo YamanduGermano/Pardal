@@ -126,3 +126,13 @@ nav{
     opacity: 1;
 }
 
+.pin{
+    position:absolute;
+    width:2rem;
+    height: 2rem;
+    transform: translate(-50%,-50%);
+    user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+}

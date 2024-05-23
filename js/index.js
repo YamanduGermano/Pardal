@@ -65,6 +65,37 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+    mapa = this.querySelector('#mapa')
+    pins = {}
+    pinIDs = 0
+    features = this.querySelector('#mapaFeatures')
 
-    
+
+    function deletePin (pin) {
+        features.removeChild(pin.target)
+        delete pins[pin.target.id]
+        pin.stopPropagation()
+    }
+
+    mapa.addEventListener('click',(e)=>{
+        pin = this.createElement('img')
+        pin.src = '../assets/Policia.svg'
+        pin.classList.add('pin')
+        
+        // Posição do Pin
+        pin.style.left= (e.layerX-e.target.scrollLeft)+'px'
+        pin.style.top=(e.layerY-e.target.scrollTop)+'px'
+        
+        // ID único do Pin
+        pin.id = pinIDs
+        pinIDs++
+
+        pins[pin.id] = [e.layerX,e.layerY,pin]
+        
+        console.log(pin)
+        
+        features.appendChild(pin)
+        e.stopPropagation()
+        pin.addEventListener('click',(p)=>{deletePin(p)})
+    })
 })
