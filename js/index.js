@@ -65,6 +65,64 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-
+    mapa = this.querySelector('#mapa')
+    features = this.querySelector('#mapaFeatures')
     
+    pins = JSON.parse(localStorage.getItem('pins'))
+    pinIDs = JSON.parse(localStorage.getItem('pinIDs'))
+    
+    function addPin() {
+        pin = document.createElement('img')
+        pin.src = '../assets/Policia.svg'
+        pin.classList.add('pin')
+        
+        // ID único do Pin
+        pin.id = pinIDs
+        pinIDs++
+
+        return (pin)
+    }
+
+    function deletePin (pin) {
+        features.removeChild(pin.target)
+        delete pins[pin.target.id]
+        pin.stopPropagation()
+        localStorage.setItem(JSON.stringify(pins))
+    }
+
+    if (pins==null){
+        pins = {}
+    } else{
+        Object.values(pins).forEach(p => {
+            pin = addPin()
+            // Posição do Pin
+            pin.style.left = p[0]+'px'
+            pin.style.top = p[1]+'px'
+
+            features.appendChild(pin)
+        });
+    }
+    if (pinIDs==null){pinIDs=0}
+
+
+    mapa.addEventListener('click',(e)=>{
+        pin = addPin()
+
+        // Posição do Pin
+        pin.style.left= (e.layerX-e.target.scrollLeft)+'px'
+        pin.style.top=(e.layerY-e.target.scrollTop)+'px'
+
+        // Adicionar Pin na lista de Pins
+        pins[pin.id] = [e.layerX,e.layerY,pin.src]
+        
+        features.appendChild(pin)
+
+        pin.addEventListener('click',(p)=>{deletePin(p)})
+        
+        // Atualizar a lista local de Pins
+        localStorage.setItem('pins',JSON.stringify(pins))
+        localStorage.setItem('pinIDs',JSON.stringify(pinIDs))
+
+        e.stopPropagation()
+    })
 })
