@@ -75,20 +75,17 @@ document.addEventListener('DOMContentLoaded', function() {
         pin = document.createElement('img')
         pin.src = '../assets/Policia.svg'
         pin.classList.add('pin')
-        
-        // ID único do Pin
-        pin.id = pinIDs
-        pinIDs++
-
         return (pin)
     }
 
-    function deletePin (pin) {
+    function deletePin(pin) {
         features.removeChild(pin.target)
         delete pins[pin.target.id]
         pin.stopPropagation()
-        localStorage.setItem(JSON.stringify(pins))
+        localStorage.setItem('pins',JSON.stringify(pins))
     }
+
+    console.log(pins)
 
     if (pins==null){
         pins = {}
@@ -99,6 +96,10 @@ document.addEventListener('DOMContentLoaded', function() {
             pin.style.left = p[0]+'px'
             pin.style.top = p[1]+'px'
 
+            // ID único do Pin
+            pin.id = p[3]
+
+            pin.addEventListener('click',(p)=>{deletePin(p)})
             features.appendChild(pin)
         });
     }
@@ -112,8 +113,12 @@ document.addEventListener('DOMContentLoaded', function() {
         pin.style.left= (e.layerX-e.target.scrollLeft)+'px'
         pin.style.top=(e.layerY-e.target.scrollTop)+'px'
 
+        // ID único do Pin
+        pin.id = pinIDs
+        pinIDs++
+
         // Adicionar Pin na lista de Pins
-        pins[pin.id] = [e.layerX,e.layerY,pin.src]
+        pins[pin.id] = [e.layerX,e.layerY,pin.src,pin.id]
         
         features.appendChild(pin)
 
