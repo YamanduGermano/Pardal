@@ -66,36 +66,63 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
     mapa = this.querySelector('#mapa')
-    pins = {}
-    pinIDs = 0
     features = this.querySelector('#mapaFeatures')
-
-
-    function deletePin (pin) {
-        features.removeChild(pin.target)
-        delete pins[pin.target.id]
-        pin.stopPropagation()
-    }
-
-    mapa.addEventListener('click',(e)=>{
-        pin = this.createElement('img')
+    
+    pins = JSON.parse(localStorage.getItem('pins'))
+    pinIDs = JSON.parse(localStorage.getItem('pinIDs'))
+    
+    function addPin() {
+        pin = document.createElement('img')
         pin.src = '../assets/Policia.svg'
         pin.classList.add('pin')
-        
-        // Posição do Pin
-        pin.style.left= (e.layerX-e.target.scrollLeft)+'px'
-        pin.style.top=(e.layerY-e.target.scrollTop)+'px'
         
         // ID único do Pin
         pin.id = pinIDs
         pinIDs++
 
-        pins[pin.id] = [e.layerX,e.layerY,pin]
-        
-        console.log(pin)
+        return (pin)
+    }
+
+    function deletePin (pin) {
+        features.removeChild(pin.target)
+        delete pins[pin.target.id]
+        pin.stopPropagation()
+        localStorage.setItem(JSON.stringify(pins))
+    }
+
+    if (pins==null){
+        pins = {}
+    } else{
+        Object.values(pins).forEach(p => {
+            pin = addPin()
+            // Posição do Pin
+            pin.style.left = p[0]+'px'
+            pin.style.top = p[1]+'px'
+
+            features.appendChild(pin)
+        });
+    }
+    if (pinIDs==null){pinIDs=0}
+
+
+    mapa.addEventListener('click',(e)=>{
+        pin = addPin()
+
+        // Posição do Pin
+        pin.style.left= (e.layerX-e.target.scrollLeft)+'px'
+        pin.style.top=(e.layerY-e.target.scrollTop)+'px'
+
+        // Adicionar Pin na lista de Pins
+        pins[pin.id] = [e.layerX,e.layerY,pin.src]
         
         features.appendChild(pin)
-        e.stopPropagation()
+
         pin.addEventListener('click',(p)=>{deletePin(p)})
+        
+        // Atualizar a lista local de Pins
+        localStorage.setItem('pins',JSON.stringify(pins))
+        localStorage.setItem('pinIDs',JSON.stringify(pinIDs))
+
+        e.stopPropagation()
     })
 })
