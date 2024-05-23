@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (modoRua){
         iconeMR.src = '../assets/iconeAtivo.svg'
     } else{
-        iconeMR.src = '../assets/iconeInativo.svg'
+        iconeMR.src = '../assets/iconeInativo.svg';
     }
 
 
