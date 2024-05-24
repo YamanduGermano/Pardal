@@ -6,11 +6,13 @@
 
 #input-classificacao {
     padding: 1rem;
-    margin-top: 25rem;
     width: 100vw;
     box-sizing: border-box; 
     display: flex;
     gap: 1em;
+    position: fixed;
+    bottom: 3em;
+    left: 1em;
 }
 
 .input-class{
