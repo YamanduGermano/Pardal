@@ -34,7 +34,28 @@ document.addEventListener('DOMContentLoaded', function() {
     
     pins = JSON.parse(localStorage.getItem('pins'))
     pinIDs = JSON.parse(localStorage.getItem('pinIDs'))
-    
+
+    function loadPins() {
+        Object.values(pins).forEach(pinData => {
+            var pin = document.createElement('img');
+            pin.src = pinData.src;
+            pin.classList.add('pin');
+            pin.style.left = pinData.left;
+            pin.style.top = pinData.top;
+            pin.id = pinData.id;
+            pin.addEventListener('click', deletePin);
+            features.appendChild(pin);
+        });
+    }
+
+    if (pins == null){pins = {}}
+    else{loadPins()}
+
+    if (pinIDs == null) {
+        pinIDs = 0
+    }
+
+
     function addPin() {
         switch (pagina_atual) {
             case "classificacao.html":
@@ -69,22 +90,8 @@ document.addEventListener('DOMContentLoaded', function() {
         event.stopPropagation();
     }
 
-    function loadPins() {
-        Object.values(pins).forEach(pinData => {
-            var pin = document.createElement('img');
-            pin.src = pinData.src;
-            pin.classList.add('pin');
-            pin.style.left = pinData.left;
-            pin.style.top = pinData.top;
-            pin.id = pinData.id;
-            pin.addEventListener('click', deletePin);
-            features.appendChild(pin);
-        });
-    }
-
-    loadPins();
-
     mapa.addEventListener('click', (e) => {
+        console.log('a')
         var pin = addPin();
 
         // Posição do Pin
