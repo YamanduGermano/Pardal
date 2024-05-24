@@ -32,7 +32,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     mapa = document.querySelector('#mapa')
     features = document.querySelector('#mapaFeatures')
-    console.log(mapa)
     pagina_atual = window.location.pathname.split("/").pop();
 
     
@@ -94,9 +93,7 @@ document.addEventListener('DOMContentLoaded', function() {
         event.stopPropagation();
     }
     
-    debug = this.querySelector('#debug')
     mapa.addEventListener('click', (e) => {
-        console.log(e)
         var pin = addPin();
 
         // Posição do Pin
@@ -126,13 +123,5 @@ document.addEventListener('DOMContentLoaded', function() {
         localStorage.setItem('pinIDs', JSON.stringify(pinIDs));
 
         e.stopPropagation();
-        debug.innerHTML = e.offsetY
-        console.log(e.layerY,e.target.scrollTop)
     });
-    
-    coords = this.querySelector('#coords')
-    mapa.addEventListener('scroll', (e)=>{
-
-        coords.innerHTML = `${Math.floor(e.target.scrollLeft)} , ${Math.floor(e.target.scrollTop)}`
-    })
 })
