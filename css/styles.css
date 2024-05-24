@@ -23,7 +23,6 @@
 }
 
 body{
-    font-weight: 400;
     font-family: var(--fonte-titulo);
 }
 
@@ -39,6 +38,17 @@ h3 {
 h4 {
     font-size: 1rem;
     font-weight: bold;
+}
+
+header {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .linha {
@@ -82,3 +92,8 @@ h4 {
     align-items: center;
     padding: 1rem 1.5rem;
 }
+
+.titulo2{
+    font-size: 1.2rem;
+    text-align: center;
+}   
