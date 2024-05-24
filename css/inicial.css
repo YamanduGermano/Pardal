@@ -1,3 +1,9 @@
+#input-rota-container {
+    padding: 1rem 1rem 0px 1rem;
+    width: 100vw;
+    box-sizing: border-box; 
+}
+
 .item-drawer {
     padding: 0px;
 }
@@ -16,14 +22,79 @@
     border-radius: calc(2.5rem);
 }
 
-#input-rota-container {
-    padding: 1rem;
+
+#overlay{
+    display: none;
+    position: fixed;
+    top:0px;
+    left: 0px;
     width: 100vw;
-    box-sizing: border-box; 
+    height: 100vh;
+    background-color: white;
+    opacity: 0;
+    transition:.5s cubic-bezier(.64,.08,.32,.99); 
+    z-index: 1;
 }
 
-nav{
+#overlay.active{
+    display: block;
+    opacity: 1;
+}
+
+#navRotas {
+    position:fixed;
+    top:0px;
+    z-index: 10;
     width: 100%;
+    height: 0;
+    transition:.5s cubic-bezier(.64,.08,.32,.99);
+    background-color: white;
+}
+
+#fecharRotas{
+    border-radius: 2rem;
+    padding:.5rem;
+    aspect-ratio: 1;
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.32);
+    background-color: white;
+    display: none;
+}
+
+#lista-rotas{
+    margin:1rem;
+    display: none;
+}
+
+#navRotas.active{
+    height: 100%;
+}
+#navRotas.active #fecharRotas{
+    display: block;
+    opacity: 1;
+}
+
+#navRotas.active #lista-rotas{
+    display: block;
+    opacity: 1;
+}
+
+#navRotas.active #configuracoes{
+    display: none;
+}
+
+.item-rota{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+}
+
+.item-rota > p {
+    color:black;
+    text-decoration: none;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-right: 1rem;
 }
 
 #input-rota {
@@ -108,20 +179,19 @@ nav{
     justify-content: center;
 }
 
-#overlay {
+#overlayModoRua {
     display: none;
     position: absolute;
     justify-content: center;
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background-color: white;
     opacity: 0;
-    z-index: 10;
+    z-index: 2;
     transition:.5s cubic-bezier(.64,.08,.32,.99);
 }
 
-#overlay.active {
+#overlayModoRua.active {
     display: flex;
     opacity: 1;
 }
