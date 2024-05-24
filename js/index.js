@@ -63,8 +63,6 @@ document.addEventListener('DOMContentLoaded', function() {
         iconeMR.src = '../assets/iconeInativo.svg';
     }
 
-
-
     mapa = this.querySelector('#mapa')
     features = this.querySelector('#mapaFeatures')
     
