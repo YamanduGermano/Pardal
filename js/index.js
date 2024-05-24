@@ -85,7 +85,6 @@ document.addEventListener('DOMContentLoaded', function() {
         localStorage.setItem('pins',JSON.stringify(pins))
     }
 
-    console.log(pins)
 
     if (pins==null){
         pins = {}
