@@ -1,6 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
+    isMobile = false
+    window.addEventListener('touchstart',(e)=>{isMobile=true})
     estrelas = document.querySelectorAll('.estrela')
     classificar = document.querySelector('#botao_classificacao')
+    
+
     
     // Seleciona as 5 estrelas e atribui uma variavel "estrela" para cada 
     estrelas.forEach(function(estrela){
@@ -80,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function() {
         pin.classList.add('pin')
         return (pin)
     }
-
+    
     function deletePin(event) {
         var pin = event.target;
         var pinID = pin.id;
@@ -89,15 +93,20 @@ document.addEventListener('DOMContentLoaded', function() {
         localStorage.setItem('pins', JSON.stringify(pins));
         event.stopPropagation();
     }
-
+    
+    debug = this.querySelector('#debug')
     mapa.addEventListener('click', (e) => {
-        console.log('a')
+        console.log(e)
         var pin = addPin();
 
         // Posição do Pin
-        pin.style.left = (e.layerX - e.target.scrollLeft) + 'px';
-        pin.style.top = (e.layerY - e.target.scrollTop) + 'px';
+        pin.style.left = (e.layerX + e.target.scrollLeft) + 'px';
+        pin.style.top = (e.layerY + e.target.scrollTop) + 'px';
 
+        if (isMobile){
+            pin.style.left = (e.offsetX) + 'px';
+            pin.style.top = (e.offsetY) + 'px';
+        }
         // ID único do Pin
         pin.id = pinIDs++;
         
@@ -117,5 +126,13 @@ document.addEventListener('DOMContentLoaded', function() {
         localStorage.setItem('pinIDs', JSON.stringify(pinIDs));
 
         e.stopPropagation();
+        debug.innerHTML = e.offsetY
+        console.log(e.layerY,e.target.scrollTop)
     });
+    
+    coords = this.querySelector('#coords')
+    mapa.addEventListener('scroll', (e)=>{
+
+        coords.innerHTML = `${Math.floor(e.target.scrollLeft)} , ${Math.floor(e.target.scrollTop)}`
+    })
 })
