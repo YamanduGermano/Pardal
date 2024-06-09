@@ -11,10 +11,10 @@ document.addEventListener('DOMContentLoaded', function() {
         video: {
           width: {
             min: 720,
-            max: 1280,
+            max: 720,
           },
           height: {
-            min: 405,
+            min: 720,
             max: 720
           },
         }
