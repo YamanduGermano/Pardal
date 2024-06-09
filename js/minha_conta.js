@@ -6,22 +6,27 @@ document.addEventListener('DOMContentLoaded', function() {
     let foto = document.querySelector('.icone_perfil')
     let moldura = document.querySelector('.moldura');
     let streamStarted = false;
+    let mudar = document.querySelector('#info')
 
     const constraints = {
         video: {
           width: {
             min: 720,
-            max: 720,
+            max: 720
           },
           height: {
             min: 720,
             max: 720
           },
+          facingMode: 'user',
+          image_format: 'jpeg',
+          jpeg_quality: 100
         }
       };
 
     const getCameraSelection = async () => {
         const devices = await navigator.mediaDevices.enumerateDevices();
+
         const videoDevices = devices.filter(device => device.kind === 'videoinput');
         const options = videoDevices.map(videoDevice => {
           return `<option value="${videoDevice.deviceId}">${videoDevice.label}</option>`;
@@ -47,7 +52,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 canvas.remove()
             }
             foto.remove();
-
         }
         else if (determ==0){
             inv.style.display = "none"
@@ -75,6 +79,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 exact: cameraOptions.value
               }
             };
+            console.log(cameraOptions.value)
             startStream(updatedConstraints);
           }
     })
@@ -83,12 +88,14 @@ document.addEventListener('DOMContentLoaded', function() {
     
     const handleStream = (stream) => {
       video.srcObject = stream;
-    //   play.classList.add('d-none');
-    //   pause.classList.remove('d-none');
-    //   screenshot.classList.remove('d-none');
       streamStarted = true;
     };
     
     getCameraSelection();
 
+
+
+    mudar.addEventListener('click',function(){
+      
+    })
 })

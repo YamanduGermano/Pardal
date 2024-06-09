@@ -123,3 +123,8 @@ canva{
     display: none;
     flex-direction: column;
 }
+
+
+.botoes{
+    display: none;
+}
