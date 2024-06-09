@@ -6,7 +6,10 @@ document.addEventListener('DOMContentLoaded', function() {
     let foto = document.querySelector('.icone_perfil')
     let moldura = document.querySelector('.moldura');
     let streamStarted = false;
-    let mudar = document.querySelector('#info')
+    let edit = document.querySelector('#info')
+    let botoes = document.querySelector('#botoes')
+    let cancelar = document.querySelector('#botoes')
+    let  mudar = document.querySelector('#botoes')
 
     const constraints = {
         video: {
@@ -94,8 +97,24 @@ document.addEventListener('DOMContentLoaded', function() {
     getCameraSelection();
 
 
+    let def= 1
+    edit.addEventListener('click',function(){
+        if (def==1){
+          botoes.style.display = "flex"
+          def=0
+        }
+    })
 
     mudar.addEventListener('click',function(){
-      
+      if (def==0){
+        botoes.style.display = "none"
+        def=1
+      }
     })
+    cancelar.addEventListener('click',function(){
+      if (def==0){
+        botoes.style.display = "none"
+        def=1
+      }
+  })
 })

@@ -49,7 +49,7 @@
 
 #botoes{
     padding-top: 1rem;
-    display: flex;
+    display: none;
     gap: 1rem;
 }
 
@@ -122,9 +122,4 @@ canva{
 .invisivel{
     display: none;
     flex-direction: column;
-}
-
-
-.botoes{
-    display: none;
 }
